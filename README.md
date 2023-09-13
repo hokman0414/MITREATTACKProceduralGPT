@@ -20,18 +20,21 @@ Uncomment the codes at the bottom within main.py and specify the detection rule.
 
 
 # Usage: 
-Please make sure to install all requirements before running.
+1. Please make sure to install all requirements before running.
 ```
 pip install -r requirements.txt
 ```
-Add API keys (Input ChatGPT API key in Backend.py and Scraper API Key input in LinkScrapeData.py)
+2. Add API keys (Input ChatGPT API key in Backend.py and Scraper API Key input in LinkScrapeData.py)
 https://www.scraperapi.com/ - ScraperAPI
 https://platform.openai.com/account/api-keys - GPT KEY
 
-Run Streamlit app
+3. Run Streamlit app
 ```
 streamlit run main.py
 ```
+4. Input TTP Research link
+5. Input Mitre Technique or Sub-Technique code
+
 Video Usage: https://youtu.be/ZKeZSmAKOy4
 
 # Final Note:
