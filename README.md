@@ -22,3 +22,6 @@ Uncomment the codes at the bottom within main.py and specify the detection rule.
 # Usage: 
 Please make sure to install all requirements before running.
 Video Usage: https://youtu.be/ZKeZSmAKOy4
+
+# Final Note:
+This project still requires editing of the prompts and possible finetuning to help improve the accuracy. I will continue to make future updates on this project.
