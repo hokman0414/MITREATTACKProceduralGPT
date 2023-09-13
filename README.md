@@ -6,3 +6,6 @@ The main aim of this project is to address the existing challenges in Cyber Thre
 - Offer Red teams and offensive security personnel a tool that could help them emulate various threat actors more effectively.
 - Provide procedural-level TTPs as examples for Threat Hunting and Threat Detection rule creation.
 - Produce quicker analysis for better-defined intelligence products.
+
+# DESIGN:
+![image](https://github.com/hokman0414/MitreProceduralGPT/assets/106271123/acbe8e8c-71e6-4a62-909d-b2b4afc68119)
