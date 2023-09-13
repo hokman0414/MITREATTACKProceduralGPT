@@ -14,8 +14,10 @@ The main aim of this project is to address the existing challenges in Cyber Thre
 # Goal:
 This DOES NOT fully automate CTI analyst task of dissection BUT does ASSIST in the manual dissection process (pinpoint where attack is shown which speeds up the identification process). CTI analyst/engineers should still verify the claims of these quickly per all Intelligence Products + Product validation processes(aka peer and Final review). 
 
-# Enabling Design:
-Uncomment the codes at the bottom within main.py and specify the detection rule
+# Enabling Detection Rule Creation:
+Uncomment the codes at the bottom within main.py and specify the detection rule.
+![image](https://github.com/hokman0414/MITREATTACKProceduralGPT/assets/106271123/cd88200b-3d85-4d6f-9237-915332d770b9)
+
 
 # Usage: 
 Please make sure to install all requirements before running.
