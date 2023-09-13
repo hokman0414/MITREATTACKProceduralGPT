@@ -1,8 +1,8 @@
 # MitreProceduralGPT (Proof Of Concept)
-Extract Procedural Details of the TTP based on the actor mentioned in OSINT reportings
-
 **Introduction:
 **
+
+
 The main aim of this project is to address the existing challenges in Cyber Threat Intelligence (CTI), particularly in the rapid and precise generation of Tactics, Techniques, and Procedures (TTP) based on Mitre's ATT&CK framework. Currently, CTI analysts spend a disproportionate amount of time dissecting and interpreting Mitre T-codes manually, resulting in delays that could be costly to organizational security.
 
 **Objectives:
