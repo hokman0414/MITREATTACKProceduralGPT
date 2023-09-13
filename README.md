@@ -9,3 +9,8 @@ The main aim of this project is to address the existing challenges in Cyber Thre
 
 # Concept Design:
 ![image](https://github.com/hokman0414/MitreProceduralGPT/assets/106271123/acbe8e8c-71e6-4a62-909d-b2b4afc68119)
+
+
+# Goal:
+This DOES NOT fully automate CTI analyst task of dissection BUT does ASSIST in the manual dissection process (pinpoint where attack is shown which speeds up the identification process). CTI analyst/engineers should still verify the claims of these code quickly per all Intelligence Products + Product validation processes(aka peer and Final review). 
+
