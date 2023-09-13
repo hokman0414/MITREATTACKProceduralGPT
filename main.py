@@ -23,8 +23,8 @@ st.title("🛡️ Welcome to the Mitre-Tcode ProcedureGPT App 🛡️")
 st.write("This app allows you to explore Mitre-Tcodes procedures using the power of GPT-3.5.")
 
 # Input for article links as a text box
-st.write("Enter article links (press Enter to add more):")
-article_links_text = st.text_area("Article Links")
+st.write("Enter article link")
+article_links_text = st.text_area("Article Link")
 
 # Input for Mitre T-code varaible
 t_code = st.text_input("Enter a Mitre T-code:")
