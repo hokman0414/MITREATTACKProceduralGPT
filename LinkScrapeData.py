@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 def ScrapeSite(link):
-    payload = {'api_key': '6862e364e496975c29d80c2920c90cc7', 'url': link}
+    payload = {'api_key': 'ENTER SCRAPERAPI KEY', 'url': link}
     r = requests.get('http://api.scraperapi.com', params=payload)
     if r.status_code == 200:
         ScrappedData = r.text
