@@ -34,6 +34,7 @@ streamlit run main.py
 ```
 4. Input TTP Research link
 5. Input Mitre Technique or Sub-Technique code
+6. Submit Button
 
 Video Usage: https://youtu.be/ZKeZSmAKOy4
 
