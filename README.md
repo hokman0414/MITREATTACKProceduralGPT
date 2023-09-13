@@ -3,7 +3,7 @@ The main aim of this project is to address the existing challenges in Cyber Thre
 
 # Objectives:
 - Automate the extraction of procedural level TTPs from various reports, thereby saving CTI analysts' time.
-- Offer Red teams and offensive security personnel a tool that could help them emulate various threat actors more effectively.
+- Offer Red teams and offensive security personnel a tool that could help them emulate various threat actors.
 - Provide procedural-level TTPs as examples for Threat Hunting and Threat Detection rule creation.
 - Produce quicker analysis for better-defined intelligence products.
 
