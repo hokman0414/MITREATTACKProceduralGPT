@@ -14,5 +14,9 @@ The main aim of this project is to address the existing challenges in Cyber Thre
 # Goal:
 This DOES NOT fully automate CTI analyst task of dissection BUT does ASSIST in the manual dissection process (pinpoint where attack is shown which speeds up the identification process). CTI analyst/engineers should still verify the claims of these quickly per all Intelligence Products + Product validation processes(aka peer and Final review). 
 
+# Enabling Design:
+Uncomment the codes at the bottom within main.py and specify the detection rule
+
 # Usage: 
-https://youtu.be/ZKeZSmAKOy4
+Please make sure to install all requirements before running.
+Video Usage: https://youtu.be/ZKeZSmAKOy4
