@@ -40,6 +40,6 @@ streamlit run main.py
 6. Submit Button
 
 Video Usage: https://youtu.be/ZKeZSmAKOy4
-
+(By Default, the LLM is GPT 3.5 but can be changed.)
 # Final Note:
 This project still requires editing of the prompts and possible finetuning to help improve the accuracy. I will continue to make future updates on this project.
