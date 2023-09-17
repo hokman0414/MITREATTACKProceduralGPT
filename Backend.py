@@ -48,7 +48,7 @@ def queryTcode(tcode):
     # Define the prompt -> set to singular question for testing
     prompt_text = f'''generate a detailed question based on description below that can answer the Procedural level of the TTPs. 
                     output must:contain only the question and nothing else. don't contain T code or mitre. must include the name of the attack: {Tname}. No mentions of TTPs or procedural leve.
-                    output must be: "how did the threat actor/malware specifically exploited" 
+                    output must be: "how did the threat actor/malware specifically (exploited or use)" 
                     Mitre: {Tcode}
                     description:{description}'''
 
@@ -113,7 +113,7 @@ def get_text_chunks_langchain(text,link,title):
 #getting the mitre TTPs when u put in the T code. use emdedding to extract the question via another QA retrieval
 def QARetrieval(llm, VectorStore,tcode):
     # chatGPT API Prompt template
-    template=f'''{queryTcode(tcode)} output requirement: 1.put into a paragraph which bullet point specific technical commands,codes,or indicators related and must only start with *threat group name or malware name only* exploited/used/established*' 2.To best of your ability you can use your internal knowledge that may correlate relevant data'''
+    template=f'''{queryTcode(tcode)} output requirement: 1.put into a paragraph which bullet point specific technical commands,codes,or indicators related and must only start with *threat group name or malware name only *used/exploited/orestablished*' 2.To best of your ability you can use your internal knowledge that may correlate relevant data'''
     answer = RetrievalQA.from_chain_type(llm=llm, chain_type="stuff", retriever=VectorStore.as_retriever(search_type="mmr"))
     chain = answer.run(template)
     return chain
