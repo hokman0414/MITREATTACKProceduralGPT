@@ -43,3 +43,6 @@ Video Usage: https://youtu.be/ZKeZSmAKOy4
 (By Default, the LLM is GPT 3.5 but can be changed.)
 # Final Note:
 This project still requires editing of the prompts and possible finetuning to help improve the accuracy. I will continue to make future updates on this project.
+Any questions or feedbacks are greatly appreciated:
+https://twitter.com/calvin_so5
+https://www.linkedin.com/in/calvinso1/
