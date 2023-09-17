@@ -48,7 +48,7 @@ def queryTcode(tcode):
     # Define the prompt -> set to singular question for testing
     prompt_text = f'''generate a detailed question based on description below that can answer the Procedural level of the TTPs. 
                     output must:contain only the question and nothing else. don't contain T code or mitre. must include the name of the attack: {Tname}. No mentions of TTPs or procedural leve.
-                    output must be: "how did the threat actor/malware specifically (exploited or use)" 
+                    output must be: "how did the threat actor/malware specifically use" 
                     Mitre: {Tcode}
                     description:{description}'''
 
@@ -112,8 +112,15 @@ def get_text_chunks_langchain(text,link,title):
 #PFIx this later
 #getting the mitre TTPs when u put in the T code. use emdedding to extract the question via another QA retrieval
 def QARetrieval(llm, VectorStore,tcode):
+    for technique in techniques_data.get("techniques", []):
+        if technique["Tcode"] == tcode:
+            matching_technique = technique
+            break
+    if matching_technique is None:
+        return "Technique not found"
+    Tname = matching_technique['name']
     # chatGPT API Prompt template
-    template=f'''{queryTcode(tcode)} output requirement: 1.put into a paragraph which bullet point specific technical commands,codes,or indicators related and must only start with *threat group name or malware name only *used/exploited/orestablished*' 2.To best of your ability you can use your internal knowledge that may correlate relevant data'''
+    template=f'''{queryTcode(tcode)} output requirement: 1.put into a paragraph which bullet point specific technical commands,codes,or indicators that is only related to the question and remove anything not relating to {Tname} and must only start with *threat group name or malware name only *used/exploited/orestablished*'''
     answer = RetrievalQA.from_chain_type(llm=llm, chain_type="stuff", retriever=VectorStore.as_retriever(search_type="mmr"))
     chain = answer.run(template)
     return chain
