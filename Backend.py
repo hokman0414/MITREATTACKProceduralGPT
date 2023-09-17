@@ -120,7 +120,7 @@ def QARetrieval(llm, VectorStore,tcode):
         return "Technique not found"
     Tname = matching_technique['name']
     # chatGPT API Prompt template
-    template=f'''{queryTcode(tcode)} output requirement: 1.put into a paragraph which bullet point specific technical commands,codes,or indicators that is only related to the question and remove anything not relating to {Tname} and must only start with *threat group name or malware name only *used/exploited/orestablished*'''
+    template=f'''{queryTcode(tcode)} output requirement: 1.put into a paragraph which bullet point specific technical commands,codes,or indicators that is related to the question and remove anything not relating to {Tname} and must only start with *threat group name or malware name only *used/exploited/orestablished*'''
     answer = RetrievalQA.from_chain_type(llm=llm, chain_type="stuff", retriever=VectorStore.as_retriever(search_type="mmr"))
     chain = answer.run(template)
     return chain
